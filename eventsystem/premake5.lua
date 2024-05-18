@@ -11,7 +11,8 @@ project "eventsystem"
 
     includedirs
     {
-      "src"
+      "src",
+	  "%{IncludeDir.vendor_eventsystem}"
     }
     links
     {
