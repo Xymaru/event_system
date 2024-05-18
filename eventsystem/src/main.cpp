@@ -12,8 +12,8 @@ struct LogErrorEvent {
 };
 
 class DataLogger :
-	public EM::IEventListener<LoggingEvent>,
-	public EM::IEventListener<LogErrorEvent>
+	EM::IEventListener<LoggingEvent>,
+	EM::IEventListener<LogErrorEvent>
 {
 private:
 	void debug_data(const std::string& data) {
